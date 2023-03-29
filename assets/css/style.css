@@ -1,0 +1,192 @@
+
+header {
+    height: 100vh;
+    background-color: #FF5757;
+}
+
+body {
+    font-family: 'DM Sans', Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    padding: 4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.menu-title {
+    display: flex;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2em;
+}
+
+.menu-links li {
+    margin-left: 3em;
+}
+
+.menu-links a {
+   color: #FFFFFF;
+   font-weight: 600;
+}
+
+.menu-links a:hover {
+    color: #B51414;
+    font-weight: 600;
+ }
+
+.menu-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-icons li {
+    margin-left: 1em;
+}
+
+.menu-icons a i {
+    color: #FFFFFF;
+}
+
+.menu-icons a:hover i {
+    color: #B51414;
+}
+
+.main-info {
+    padding: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-info h1 {
+    font-size: 40px;
+}
+
+.main-info-text {
+    flex-basis: 30em;
+    line-height: 1.5;
+}
+
+.main-info-text p {
+    line-height: 2;
+}
+
+.button {
+    display: inline-block;
+    font-weight: 600;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    transition: 0.2s;
+    border-radius: 40px;
+    position: relative;
+}
+
+.button:hover {
+    color: #B51414;
+}
+
+.about-box h2 {
+    padding: 4em 0 0 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    color: #c4c4c4;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.about-info {
+    padding: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+}
+
+.cadastro {
+    color: #000000;
+    background-color: #FF5757;
+    padding: 4em;
+}
+
+.cadastro h2,
+.cadastro p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.cadastro-form {
+    text-align: center;
+}
+
+.faq {
+    color: #000000;
+    padding: 4em;
+    text-align: center;
+}
+
+footer {
+    height: 15em;
+    background-color: #F4F4F6;
+    text-align: center;
+    width: 100%;
+    padding: 4em 0 0 0;
+    line-height: 2;
+}
+ 
+.navbarfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    color: #C4C4C4;
+}
+
+footer a:hover {
+    color: #6b6a6a;
+}
+
+.scroll-top {
+    background-color: #FF5757;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 30px;
+    right: 30px;
+    color: #FFFFFF;
+    position: fixed;
+    border-radius: 10px;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.scroll-top:hover {
+    background-color: #B51414;
+}
