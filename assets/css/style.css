@@ -104,6 +104,13 @@ a {
     color: #B51414;
 }
 
+.main-info .main-info-img-celular {
+    max-width:350px;
+    max-height:350px;
+    width: auto;
+    height: auto;
+}
+
 .about-box h2 {
     padding: 4em 0 0 0;
     text-transform: uppercase;
@@ -127,7 +134,8 @@ a {
     text-align: center;
 }
 
-.about-info h1 {
+.about-info h1,
+.cadastro h2 {
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1.5em;
@@ -150,10 +158,11 @@ a {
     padding: 4em;
 }
 
-.cadastro h2,
+.cadastro h2 ,
 .cadastro p {
     color: #FFFFFF;
     text-align: center;
+    line-height: 2;
 }
 
 .cadastro-form {
