@@ -15,12 +15,19 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+.logo-img {
+    margin-left: 5em;
+    width: auto;
+    height: 5em;
 }
 
 .menu {
-    padding: 4em;
+    padding: 4em 4em  0 4em;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -41,11 +48,14 @@ a {
 .menu-links a {
    color: #FFFFFF;
    font-weight: 700;
+   
 }
 
 .menu-links a:hover {
     color: #B51414;
     font-weight: 700;
+    border-bottom: 2px solid #B51414;
+    padding-bottom: 0.1em;
  }
 
 .menu-icons {
@@ -66,7 +76,7 @@ a {
 }
 
 .main-info {
-    padding: 4em;
+    padding: 2em 4em 0 4em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -105,8 +115,8 @@ a {
 }
 
 .main-info .main-info-img-celular {
-    max-width:350px;
-    max-height:350px;
+    max-width:auto;
+    max-height:30em;
     width: auto;
     height: auto;
 }
@@ -174,9 +184,11 @@ a {
 }
 
 .cadastro-form input {
-    padding: 0.5em;
-    margin: 0.5em;
-
+    padding: 1em;
+    margin: 1em;
+    width: 30em;
+    border: none;
+    border-radius: 20px;
 }
 
 .cadastro-form button {

@@ -8,6 +8,15 @@ function cadastrar() {
         email: email
     };
 
-    var userJSON = JSON.stringify(user);
-    console.log(userJSON);
+    if (validarEmail(email)) {
+        var userJSON = JSON.stringify(user);
+        console.log(userJSON);
+    } else {
+        console.log("E-mail inválido.");
+    }
+}
+
+function validarEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
 }
