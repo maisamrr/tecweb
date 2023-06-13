@@ -1,141 +1,280 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Vem Junto - seu app de caronas do IESB</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <script src="assets/js/main.js"></script>
-        <script src="https://kit.fontawesome.com/e0ed8606bd.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <!-- Navbar -->
-            <nav id="home" class="menu">
+<head>
+    <title>Vem Junto - seu app de caronas do IESB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/e0ed8606bd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <style>
+        .login {
+            color: #000000;
+            background-color: #FF5757;
+            padding: 4em;
+        }
 
-                <!-- <h1 class="menu-title">Logo</h1> -->
-                <img class="logo-img" src="./assets/images/vemjunto.png" alt="Logo do VemJunto app">
+        .login h2 {
+            padding-bottom: 0.5em;
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 2em;
+            text-align: center;
+        }
 
-                <ul class="menu-links">
-                    <li><a href="#about">Como funciona</a></li>
-                    <li><a href="#cadastro">Cadastrar</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
+        .login p {
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 2;
+        }
 
-                <ul class="menu-icons">
-                    <li><a target="_blank" href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a target="_blank" href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="mailto:oi@gmail.com"><i class="fas fa-envelope"></i></a></li>
-                </ul>
-            </nav>
+        .login-form {
+            text-align: center;
+        }
 
-            <!-- Main info -->
-            <section class="main-info">
-                <div class="main-info-text">
-                    <h1>Seu novo app de caronas chegou</h1>
-                    <p>Uma nova solução para deslocamento de estudantes até a faculdade. Integração entre alunos, economia pro seu bolso e tecnologia sem limites. Vem junto!</p>
-                    
-                    <a href="javascript:void(0)" class="button">Cadastrar</a>
-                </div>
+        .login-form input {
+            padding: 1em;
+            margin: 1em;
+            width: 30em;
+            border: none;
+            border-radius: 20px;
+        }
 
-                <div class="main-info-img">
-                    <img class="main-info-img-celular" src="./assets/images/img_celularnova.png" alt="Imagem de celular">
-                </div>
-            </section>
-        </header>
-        
-        <!-- Como funciona -->
-        <div class="about-box">
-            <h2>Como funciona</h2>
-            <section id="about" class="about-info">
-                <div>
-                    <img class="about-icons" src="./assets/images/terms.png" alt="Ícone de papéis com um checkmark verde">
-                    <h1>Cadastro</h1>
-                    <p>Faça download do app na plataforma de sua escolha e cadastre-se para começar a usar sem limites</p>
-                </div>
+        .login-form button {
+            display: inline-block;
+            font-weight: 700;
+            padding: 15px 40px;
+            color: #FFFFFF;
+            border-style: solid;
+            border-color: #FFFFFF;
+            border-width: 1px;
+            transition: 0.2s;
+            border-radius: 40px;
+            position: relative;
+            margin-top: 1em;
+            background-color: #FF5757;
+        }
 
-                <div>
-                    <img class="about-icons" src="./assets/images/car.png" alt="Ícone de um carro vermelho">
-                    <h1>Carona</h1>
-                    <p>Ofereça carona para outros alunos ou solicite uma carona com destino ou partida do IESB</p>
-                </div>
+        .login-form button:hover {
+            color: #B51414;
+        }
 
-                <div>
-                    <img class="about-icons" src="./assets/images/chat.png" alt="Ícone de dois balões de conversa, um atrás azul com linhas e um amarelo na frente com um emoticon de sorriso">
-                    <h1>Avaliação</h1>
-                    <p>Envie um feedback sobre a corrida e compartilhe com seus amigos o app de caronas do IESB</p>
-                </div>
-            </section>
+        .cadastro {
+            color: #000000;
+            background-color: #FF5757;
+            padding: 4em;
+        }
+
+        .cadastro h2 {
+            padding-bottom: 0.5em;
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .cadastro p {
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .cadastro-form {
+            text-align: center;
+        }
+
+        .cadastro-form input {
+            padding: 1em;
+            margin: 1em;
+            width: 30em;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .cadastro-form button {
+            display: inline-block;
+            font-weight: 700;
+            padding: 15px 40px;
+            color: #FFFFFF;
+            border-style: solid;
+            border-color: #FFFFFF;
+            border-width: 1px;
+            transition: 0.2s;
+            border-radius: 40px;
+            position: relative;
+            margin-top: 1em;
+            background-color: #FF5757;
+        }
+
+        .cadastro-form button:hover {
+            color: #B51414;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!-- Navbar -->
+    <nav id="home" class="menu">
+        <img class="logo-img" src="./assets/images/vemjunto.png" alt="Logo do VemJunto app">
+
+        <ul class="menu-links">
+            <li><a href="#about">Como funciona</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <ul class="menu-icons">
+            <li><a target="_blank" href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            <li><a target="_blank" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="mailto:oi@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main info -->
+    <section class="main-info">
+        <div class="main-info-text">
+            <h1>Seu novo app de caronas chegou</h1>
+            <p>Uma nova solução para deslocamento de estudantes até a faculdade. Integração entre alunos, economia pro seu bolso e tecnologia sem limites. Vem junto!</p>
+            <a href="#login" class="button">Cadastrar</a>
         </div>
 
-        <!-- Cadastro -->
-        <section id="cadastro" class="cadastro">
-            <h2>Cadastro</h2>
-            <p>Ao se inscrever com seu e-mail, você concorda com nossos termos e condições</p>
+        <div class="main-info-img">
+            <img class="main-info-img-celular" src="./assets/images/img_celularnova.png" alt="Imagem de celular">
+        </div>
+    </section>
+</header>
 
-            <div class="cadastro-form">
+<!-- Como funciona -->
+<div class="about-box">
+    <h2>Como funciona</h2>
+    <section id="about" class="about-info">
+        <div>
+            <img class="about-icons" src="./assets/images/terms.png" alt="Ícone de papéis com um checkmark verde">
+            <h1>Cadastro</h1>
+            <p>Faça download do app na plataforma de sua escolha e cadastre-se para começar a usar sem limites</p>
+        </div>
+
+        <div>
+            <img class="about-icons" src="./assets/images/car.png" alt="Ícone de um carro vermelho">
+            <h1>Carona</h1>
+            <p>Ofereça carona para outros alunos ou solicite uma carona com destino ou partida do IESB</p>
+        </div>
+
+        <div>
+            <img class="about-icons" src="./assets/images/chat.png" alt="Ícone de dois balões de conversa, um atrás azul com linhas e um amarelo na frente com um emoticon de sorriso">
+            <h1>Avaliação</h1>
+            <p>Envie um feedback sobre a corrida e compartilhe com seus amigos o app de caronas do IESB</p>
+        </div>
+    </section>
+</div>
+
+<!-- Login -->
+<section id="login" class="login">
+    <h2>Login</h2>
+    <p>Entre com seu e-mail e senha para acessar sua conta</p>
+    <div class="login-form">
+        <form>
+            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com"><br>
+            <input type="password" id="senha" name="senha" placeholder="Senha"><br>
+            <button type="button" onclick="entrar()">Entrar</button><br>
+            <p id="cadastro-link" class="register-link">Não possui uma conta? Registre-se.</p>
+        </form>
+    </div>
+</section>
+
+<script>
+    document.getElementById("cadastro-link").addEventListener("click", function() {
+        document.getElementById("login").innerHTML = `
+            <section id="cadastro" class="cadastro">
+                <h2>Cadastro</h2>
+                <p>Preencha o formulário abaixo para criar uma nova conta</p>
+                <div class="cadastro-form">
+                    <form>
+                        <input type="text" id="nome" name="nome" placeholder="Nome completo"><br>
+                        <input type="text" id="matricula" name="matricula" placeholder="Matrícula"><br>
+                        <input type="email" id="email-cadastro" name="email-cadastro" placeholder="E-mail"><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone"><br>
+                        <input type="text" id="curso" name="curso" placeholder="Curso"><br>
+                        <input type="text" id="semestre" name="semestre" placeholder="Semestre"><br>
+                        <button type="button" onclick="cadastrar()">Cadastrar</button>
+                    </form>
+                </div>
+            </section>
+        `;
+    });
+
+    function cadastrar() {
+        var nome = document.getElementById("nome").value;
+        var matricula = document.getElementById("matricula").value;
+        var email = document.getElementById("email-cadastro").value;
+        var telefone = document.getElementById("telefone").value;
+        var curso = document.getElementById("curso").value;
+        var semestre = document.getElementById("semestre").value;
+
+        // Lógica de cadastro (exemplo)
+        // ...
+        alert("Cadastro feito com sucesso");
+
+        // Restaurar a seção de login
+        document.getElementById("login").innerHTML = `
+            <h2>Login</h2>
+            <p>Entre com seu e-mail e senha para acessar sua conta</p>
+            <div class="login-form">
                 <form>
-                    <input type="text" id="nome" placeholder="Nome"><br>
                     <input type="email" id="email" name="email" placeholder="exemplo@dominio.com"><br>
-                    <button type="button" onclick="cadastrar()">Cadastrar</button>
-                  </form>
+                    <input type="password" id="senha" name="senha" placeholder="Senha"><br>
+                    <button type="button" onclick="entrar()">Entrar</button><br>
+                </form>
             </div>
-        </section>
+        `;
+    }
+</script>
 
-        <!-- FAQ -->
-        <section id="faq" class="faq">
-            <h2>FAQ</h2>
-            <details>
-                <summary>Como faço para baixar o app?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
-            </details>
+<!-- FAQ -->
+<section id="faq" class="faq">
+    <h2>FAQ</h2>
+    <details>
+        <summary>Como faço para baixar o app?</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
+    </details>
 
-            <details>
-                <summary>Posso utilizar o app sem ser alune do IESB?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
-            </details>
+    <details>
+        <summary>Posso utilizar o app sem ser aluno do IESB?</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
+    </details>
 
-            <details>
-                <summary>Funciona em Android e iOS?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
-            </details>
+    <details>
+        <summary>Funciona em Android e iOS?</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
+    </details>
 
-            <details>
-                <summary>Qual o passo a passo para solicitar ou oferecer carona?</summary>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
-            </details>
-        </section>
+    <details>
+        <summary>Qual o passo a passo para solicitar ou oferecer carona?</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui massa, euismod in odio non, maximus elementum purus. Fusce a nisi cursus sem aliquam facilisis. Nulla nisi nulla, malesuada sit amet lacus eu, sodales pellentesque sem. Sed eget turpis lorem.</p>
+    </details>
+</section>
 
+<!-- Contato -->
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+    <div>
+        <i class="fas fa-envelope"></i>
+        <p>E-mail: contato@vemjunto.com</p>
+    </div>
+    <div>
+        <i class="fas fa-phone"></i>
+        <p>Telefone: (61) 1234-5678</p>
+    </div>
+</section>
 
-        <footer>
-            <ul id="navfooter" class="navbarfooter">
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 Vem Junto - Seu app de caronas do IESB</p>
+</footer>
 
-                <div>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Como funciona</a></li>
-                    <li><a href="#cadastro">Cadastrar</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contato">Contato</a></li> 
-                </div>
-                
-                <div>
-                    <li><a href="#termos">Termos e condições</a></li>
-                    <li><a href="#privacidade">Política de privacidade</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a href="http://www.iesb.com.br">IESB</a></li>
-                </div>
-            </ul>
-
-            <p><a href="#home" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a></p>
-
-        </footer>
-    </body>
+</body>
 </html>
-
-  <!-- <a href="https://www.flaticon.com/free-icons/condition" title="condition icons">Condition icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/review" title="review icons">Review icons created by Freepik - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/car" title="car icons">Car icons created by Konkapp - Flaticon</a> -->

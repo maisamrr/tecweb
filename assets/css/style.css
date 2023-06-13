@@ -48,7 +48,6 @@ a {
 .menu-links a {
    color: #FFFFFF;
    font-weight: 700;
-   
 }
 
 .menu-links a:hover {
@@ -56,7 +55,7 @@ a {
     font-weight: 700;
     border-bottom: 2px solid #B51414;
     padding-bottom: 0.1em;
- }
+}
 
 .menu-icons {
     display: flex;
@@ -159,6 +158,116 @@ a {
     flex-basis: 20em;
 }
 
+.login {
+    color: #000000;
+    background-color: #FF5757;
+    padding: 4em;
+}
+
+.login h2 {
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 2em;
+    text-align: center;
+}
+
+.login p {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 2;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form input {
+    padding: 1em;
+    margin: 1em;
+    width: 30em;
+    border: none;
+    border-radius: 20px;
+}
+
+.login-form button {
+    display: inline-block;
+    font-weight: 700;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    transition: 0.2s;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 1em;
+    background-color: #FF5757;
+}
+
+.login-form button:hover {
+    color: #B51414;
+}
+
+.login-form p{
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 10;
+    text-decoration: underline;
+    padding: 22px auto;
+}
+
+.login {
+    color: #000000;
+    background-color: #FF5757;
+    padding: 4em;
+}
+
+.login h2 {
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 2em;
+    text-align: center;
+}
+
+.login p {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 2;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form input {
+    padding: 1em;
+    margin: 1em;
+    width: 30em;
+    border: none;
+    border-radius: 20px;
+}
+
+.login-form button {
+    display: inline-block;
+    font-weight: 700;
+    padding: 15px 40px;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    transition: 0.2s;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 1em;
+    background-color: #FF5757;
+}
+
+.login-form button:hover {
+    color: #B51414;
+}
+
 .cadastro {
     color: #000000;
     background-color: #FF5757;
@@ -246,7 +355,7 @@ footer {
     padding: 4em 0 0 0;
     line-height: 2;
 }
- 
+
 .navbarfooter {
     display: flex;
     justify-content: space-around;
@@ -273,14 +382,18 @@ footer a:hover {
     position: fixed;
     border-radius: 10px;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .scroll-top:hover {
     background-color: #B51414;
 }
+
+.hidden {
+    display: none;
+  }
+  
+  .register-link{
+    cursor: pointer;
+  }
