@@ -1,0 +1,21 @@
+{
+  "name": "tec_web",
+  "version": "1.0.0",
+  "description": "Site desenvolvido em HTML, CSS e JavaScript para a disciplina de Tecnologias Web do curso de Ciência da Computação - IESB Sul - 2023.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
