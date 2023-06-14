@@ -178,60 +178,33 @@
     <p>Entre com seu e-mail e senha para acessar sua conta</p>
     <div class="login-form">
         <form>
-            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com"><br>
-            <input type="password" id="senha" name="senha" placeholder="Senha"><br>
+            <input type="email" id="emaillog" name="email" placeholder="exemplo@dominio.com"><br>
+            <input type="password" id="senhalog" name="senhalog" placeholder="Senha"><br>
             <button type="button" onclick="entrar()">Entrar</button><br>
-            <p id="cadastro-link" class="register-link">Não possui uma conta? Registre-se.</p>
+        </form>
+    </div>
+</section>
+
+<section id="cadastro" class="cadastro">
+    <h2>Cadastro</h2>
+    <p>Preencha o formulário abaixo para criar uma nova conta</p>
+    <div class="cadastro-form">
+        <form action="registro.php" method="post" >
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" required><br>
+            <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required><br>
+            <input type="email" id="email-cadastro" name="email-cadastro" placeholder="email" required><br>
+            <div>
+                <input type="password" id="senha" name="senha" placeholder="Senha">
+            </div>
+            <div>
+                <input type="password" id="senha_confirma" name="senha_confirma" placeholder="Repita a Senha">
+            </div>
+            <button>Cadastrar</button>
         </form>
     </div>
 </section>
 
 <script>
-    document.getElementById("cadastro-link").addEventListener("click", function() {
-        document.getElementById("login").innerHTML = `
-            <section id="cadastro" class="cadastro">
-                <h2>Cadastro</h2>
-                <p>Preencha o formulário abaixo para criar uma nova conta</p>
-                <div class="cadastro-form">
-                    <form>
-                        <input type="text" id="nome" name="nome" placeholder="Nome completo"><br>
-                        <input type="text" id="matricula" name="matricula" placeholder="Matrícula"><br>
-                        <input type="email" id="email-cadastro" name="email-cadastro" placeholder="E-mail"><br>
-                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone"><br>
-                        <input type="text" id="curso" name="curso" placeholder="Curso"><br>
-                        <input type="text" id="semestre" name="semestre" placeholder="Semestre"><br>
-                        <button type="button" onclick="cadastrar()">Cadastrar</button>
-                    </form>
-                </div>
-            </section>
-        `;
-    });
-
-    function cadastrar() {
-        var nome = document.getElementById("nome").value;
-        var matricula = document.getElementById("matricula").value;
-        var email = document.getElementById("email-cadastro").value;
-        var telefone = document.getElementById("telefone").value;
-        var curso = document.getElementById("curso").value;
-        var semestre = document.getElementById("semestre").value;
-
-        // Lógica de cadastro (exemplo)
-        // ...
-        alert("Cadastro feito com sucesso");
-
-        // Restaurar a seção de login
-        document.getElementById("login").innerHTML = `
-            <h2>Login</h2>
-            <p>Entre com seu e-mail e senha para acessar sua conta</p>
-            <div class="login-form">
-                <form>
-                    <input type="email" id="email" name="email" placeholder="exemplo@dominio.com"><br>
-                    <input type="password" id="senha" name="senha" placeholder="Senha"><br>
-                    <button type="button" onclick="entrar()">Entrar</button><br>
-                </form>
-            </div>
-        `;
-    }
 </script>
 
 <!-- FAQ -->
