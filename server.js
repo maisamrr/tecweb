@@ -1,4 +1,4 @@
-import app from "./app.js";
+import app from './src/app.js';
 
 // Porta em que o servidor irá escutar
 const PORT = 80;
