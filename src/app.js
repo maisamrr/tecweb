@@ -1,19 +1,15 @@
-import express from 'express';
-import UsuarioController from './app/controllers/UsuarioController.js';
+import express from 'express'
+import routes from './routes.js'
 
 const app = express();
 
 // Rota para arquivos estáticos
-app.use(express.static('public'));
+app.use(express.static('public'))
 
 // Indicar para o express ler body com json
-app.use(express.json());
+app.use(express.json())
 
-// Rotas
-app.post('/usuarios', UsuarioController.store);
-app.get('/usuarios', UsuarioController.index);
-app.get('/usuarios/:id', UsuarioController.show);
-app.put('/usuarios/:id', UsuarioController.update);
-app.delete('/usuarios/:id', UsuarioController.delete);
+// Usar o Router
+app.use(routes)
 
 export default app;
